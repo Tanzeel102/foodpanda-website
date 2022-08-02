@@ -1,0 +1,584 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family:Arial, Helvetica, sans-serif;
+   
+}
+header
+{
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-bottom: 1px solid #888; */
+}
+header .logo
+{
+    width: 230px;
+    height: 50px;
+    /* border: 1px solid black; */
+
+}
+header .logo img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header .headerBtn button
+{
+    padding: 5px 20px;
+    border: 2px solid #d70f64;
+    background-color: #fff;
+    color: #d70f64;
+    font-weight: 500;
+    transition-duration:0.3s;
+    cursor: pointer;
+}
+header .headerBtn button:nth-child(1):hover
+{
+    background-color: #d70f64;
+    color: #fff;
+}
+header .headerBtn button:nth-child(2)
+{
+    background-color: #d70f64;
+    color:#fff;
+}
+header .headerBtn button:nth-child(2):hover
+{
+    background-color: #fff;
+    color: #d70f64;
+}
+
+.banner
+{
+    width: 100%;
+    height: 75vh;
+    background: url(hero-home-pk.webp);
+    background-size: 55%;
+    background-position: 155%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.banner h2
+{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 2em;
+    color: #333;
+    font-weight: 200;
+
+}
+.banner .searchRestaurant
+{
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    width: 55%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 28px 0 rgb(0 0 0 / 15%)
+}
+.banner .searchRestaurant .textbox
+{
+    padding: 15px 25px;
+    width: 60%;
+    border: 1px solid rgb(153, 153, 153,0.5);
+    outline: none;
+    
+}
+.banner .searchRestaurant .textbox:focus
+{
+    border: 1px solid #d70f64;
+
+}
+.banner .searchRestaurant .textbox::placeholder
+{
+    font: 1.1em;
+    color: rgb(200, 200, 200);
+    font-weight: 300;
+}
+.banner .searchRestaurant .bannerBtn button
+{
+    background-color: #d70f64;
+    padding: 17px 27px;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+.banner .searchRestaurant .bannerBtn span
+{
+    font-weight: 300;
+    color: #999;
+    
+}
+.aboutTitle
+{
+     width: 65%; 
+    text-align: center;
+    margin-top: 100px;
+    position: relative; 
+    
+}
+.aboutTitle::before
+{
+    content: "Partners";
+    position: absolute;
+    top: -130px;
+    left: 30px;
+    font-size: 12em;
+    color: rgba(153, 153, 153, 0.205);
+    font-weight: 700;
+    z-index: -1000; 
+
+}
+.aboutTitle h2
+{
+    font-weight: 200; 
+    font-size: 1.8em;
+    z-index: 1000;  
+} 
+.about
+{
+    width: 100%;
+    height: 70vh;
+    background-image: url(home-vendor-pk.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.about .aboutcontent
+{
+    width: 38%;
+    background-color: #fff;
+    padding: 20px 30px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    box-shadow: 0 2px 28px 0 rgb(0 0 0 / 20%)
+}
+.about .aboutcontent h2
+{
+    font-weight: 400;
+    font-size: 1.5em;
+}
+.about .aboutcontent p
+{
+    font-size: 14px;
+    margin-top: 15px;
+    color:rgba(85, 85, 85, 0.383);
+    font-weight: 200;
+}
+.about .aboutcontent .aboutBtn
+{
+    padding: 5px 40px;
+    border: none;
+    background-color: #d70f64;
+    color: #fff;
+    float: right;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+.CityTitle
+{
+     width: 51%; 
+    text-align: center;
+    margin-top: 300px;
+    position: relative; 
+    
+}
+.CityTitle::before
+{
+    content: "Cities";
+    position: absolute;
+    top: -130px;
+    left: 30px;
+    font-size: 12em;
+    color: rgba(153, 153, 153, 0.205);
+    font-weight: 700;
+    z-index: -1000; 
+
+}
+.CityTitle h2
+{
+    font-weight: 200; 
+    font-size: 1.8em;
+    z-index: 1000;  
+} 
+.City
+{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.City .Citycontent
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.City .Citycontent .citycard
+{
+    width: 210px;
+    height: 260px;
+    padding: 8px;
+    /* border: 1px solid #000; */
+    background-image: url(Karachi.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position:relative;
+    cursor: pointer;
+}
+.City .Citycontent .citycard:nth-child(2)
+{
+    background-image: url(Lahore.png);
+    background-size: cover;
+    background-position: center;
+
+}
+.City .Citycontent .citycard:nth-child(3)
+{
+    background-image: url(Islamabad.png);
+    background-size: cover;
+    background-position: center;
+
+}
+.City .Citycontent .citycard:nth-child(4)
+{
+    background-image: url(rawalpindi.png);
+    background-size: cover;
+    background-position: center;
+
+}
+.City .Citycontent .citycard:nth-child(5)
+{
+    background-image: url(Faisalabad.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.City .Citycontent .citycard h2
+{
+    color: #fff;
+    font-size: 1.7em;
+    font-weight: 600;
+    z-index: 1000;
+}
+ .City .Citycontent .citycard .alphabet
+{
+    position: absolute;
+    top: 15%;
+    left: -16px;
+    font-size: 15em;
+    color: #d70f64; 
+    font-weight: 600;
+    z-index: 999;
+    opacity: 0;
+    transition-duration: 0.3s;
+
+}
+.City .Citycontent .citycard:hover .alphabet
+{
+    opacity: 0.5;
+
+}
+.appTitle
+{
+     width: 51%; 
+    text-align: center;
+    margin-top: 200px;
+    position: relative; 
+    
+}
+.appTitle::before
+{
+    content: "Apps";
+    position: absolute;
+    top: -130px;
+    left: 30px;
+    font-size: 12em;
+    color: rgba(153, 153, 153, 0.205);
+    font-weight: 700;
+    z-index: -1000; 
+
+}
+.appTitle h2
+{
+    font-weight: 200; 
+    font-size: 1.8em;
+    z-index: 1000; 
+}
+.app
+{
+    width: 100%;
+    height: 50vh;
+    background-color: #d70f64;
+    position: relative;
+}
+.app .appcontent
+{
+    position: absolute;
+    top: 20%;
+    left: 6%;
+    width: 42%;
+    /* border: 1px solid #fff;  */
+    padding: 10px;
+}
+.app .appcontent h2
+{
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.6em;
+
+} 
+.app .appcontent p
+{
+    color: rgb(223, 223, 223);
+    font-size: 14px;
+    font-weight: 200;
+    margin-top: 10px;
+}
+.app .appBtn
+{
+    width: 30%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 6%;
+}
+.app .appBtn .appstore
+{
+    width: 110px;
+    padding: 5px 8px;
+    background-color: #000;
+    border: 1px solid #999;
+    border-radius:10PX ;
+    display: flex;
+    justify-content: space-between;
+
+}
+.app .appBtn .appstore .imgBx
+{
+    width: 35px;
+    height: 30px;
+    /* border: 1px solid #fff; */
+}
+.app .appBtn .appstore .imgBx img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.app .appBtn .appstore h2
+{
+    color: #fff;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.app .appBtn .appstore h2 span
+{
+    font-size: 6px;
+}
+.app .cellphones
+{
+    width: 700px;
+    height: 150%;
+    /* border: 1px solid #000; */
+    position: absolute;
+    top: -100px;
+    right: 0px;
+}
+.cellphones img
+{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+.businessTitle
+{
+     width: 37%; 
+    text-align: center;
+    margin-top: 200px;
+    position: relative; 
+    
+}
+.businessTitle::before
+{
+    content: "Office";
+    position: absolute;
+    top: -130px;
+    left: 30px;
+    font-size: 12em;
+    color: rgba(153, 153, 153, 0.205);
+    font-weight: 700;
+    z-index: -1000; 
+
+}
+.businessTitle h2
+{
+    font-weight: 200; 
+    font-size: 1.8em;
+    z-index: 1000; 
+}
+.business
+{
+    width: 100%;
+    height: 75vh;
+    background: url(home.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.business .businesscontent
+{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    width: 35%;
+    padding: 25px;
+    background-color: #fff;
+    box-shadow: 0 2px 28px 0 rgb(0 0 0 / 20%)
+} 
+.business .businesscontent h2
+{
+    font-size: 1.4em;
+    font-weight: 300;
+}
+.business .businesscontent p
+{
+    font-size: 14px;
+    font-weight: 300;
+    color: #777;
+    margin-top: 15px;
+}
+.business .businesscontent .businessBtn
+{
+    padding: 5px 30px;
+    background-color: #d70f64;
+    color: #fff;
+    border:none;
+    margin-top: 20px;
+    float: right;
+    cursor: pointer;
+}
+footer
+{
+    width: 100%;
+    margin-top: 100px;
+    padding: 20px 50px;
+}
+
+footer .aboutFoodpanda h2
+{
+    font-size: 1.9em;
+    font-weight: 500;
+}
+footer .aboutFoodpanda p
+{
+    width: 99%;
+    font-size: 15px;
+    font-weight: 300;
+    color: #555;
+    margin-top: 15px;
+}
+footer .whatsnew
+{
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+footer .whatsnew h2
+{
+    font-size: 2.1em;
+    font-weight: 700;
+}
+footer .whatsnew p
+{
+    margin-top: 10px;
+    color: #555;
+}
+footer .whatsnew p span
+{
+    color: #d70f64;
+    font-weight: 400;
+    font-size: 1.1em;
+}
+footer .faq
+{
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+footer .faq h2
+{
+    font-size: 1.5em;
+    font-weight: 700;
+
+}
+footer .faq h3
+{
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #000;
+}
+footer .footerlogo 
+{
+    padding-bottom: 20px;
+}
+
+footer .footerlogo .imgBx
+{
+    width: 250px;
+    height: 50px;
+    /* border: 1px solid #000; */
+}
+footer .footerlogo .imgBx img
+{
+    width: 120%;
+    height: 110%;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+footer .copyright
+{
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+}
+footer .copyright h2
+{
+    font-size: 1.1em;
+    color: #666;
+    font-weight: 400;
+}
+footer .copyright h2 span
+{
+    color: #d70f64;
+}
+

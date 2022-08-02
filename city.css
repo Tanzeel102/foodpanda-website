@@ -1,0 +1,310 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family:Arial, Helvetica, sans-serif;
+   
+}
+ header
+{
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-bottom: 1px solid #888; */
+}
+header .logo
+{
+    width: 230px;
+    height: 50px;
+    /* border: 1px solid black; */
+
+}
+header .logo img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header .headerBtn button
+{
+    padding: 5px 20px;
+    border: 2px solid #d70f64;
+    background-color: #fff;
+    color: #d70f64;
+    font-weight: 500;
+    transition-duration:0.3s;
+    cursor: pointer;
+}
+header .headerBtn button:nth-child(1):hover
+{
+    background-color: #d70f64;
+    color: #fff;
+}
+header .headerBtn button:nth-child(2)
+{
+    background-color: #d70f64;
+    color:#fff;
+}
+header .headerBtn button:nth-child(2):hover
+{
+    background-color: #fff;
+    color: #d70f64;
+}
+
+.banner
+{
+    width: 100%;
+    height: 75vh;
+    background: url(hero-city-foodpanda.png);
+    background-size: 55%;
+    background-position: 155%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.banner h2
+{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 2em;
+    color: #333;
+    font-weight: 200;
+
+}
+.banner .searchrestaurant
+{
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    width: 55%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 28px 0 rgb(0 0 0 / 15%)
+}
+.banner .searchrestaurant .textbox
+{
+    padding: 15px 25px;
+    width: 60%;
+    border: 1px solid rgb(153, 153, 153,0.5);
+    outline: none;
+    
+}
+.banner .searchrestaurant .textbox:focus
+{
+    border: 1px solid #d70f64;
+
+}
+.banner .searchrestaurant .textbox::placeholder
+{
+    font: 1.1em;
+    color: rgb(200, 200, 200);
+    font-weight: 300;
+}
+.banner .searchrestaurant .bannerBtn button
+{
+    background-color: #d70f64;
+    padding: 17px 27px;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+.banner .searchrestaurant .bannerBtn span
+{
+    font-weight: 300;
+    color: #999;
+    
+}
+.restaurantTitle
+{
+     width: 65%; 
+    text-align: center;
+    margin-top: 100px;
+    position: relative; 
+    
+}
+.restaurantTitle::before
+{
+    content: "Karachi";
+    position: absolute;
+    top: -80px;
+    left: 110px;
+    font-size: 9em;
+    color: rgba(153, 153, 153, 0.205);
+    font-weight: 700;
+    z-index: -1000; 
+
+}
+.restaurantTitle h2
+{
+    font-weight: 200; 
+    font-size: 1.8em;
+    z-index: 1000;
+
+}
+.restaurant
+{
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.restaurant .restaurantcontent
+{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.restaurant .restaurantcontent .restaurantcard
+{
+    width: 300px;
+    height: 250px;
+    /* border: 1px solid #000; */
+    padding: 5px;
+    position: relative;
+}
+.restaurant .restaurantcontent .restaurantcard .imgBx
+{
+    width: 100%;
+    height: 75%;
+    /* border-bottom: 1px solid #d70f64; */
+    background-image: url(pizza.png);
+    background-size: cover;
+
+}
+.restaurant .restaurantcontent .restaurantcard .imgBx .title
+{
+    padding-top: 5px;
+}
+.restaurant .restaurantcontent .restaurantcard .imgBx .title h2
+{
+    font-size: 1.2em;
+}
+.restaurant .restaurantcontent .restaurantcard .imgBx itle p
+{
+    font-size: 14px;
+    color: #555;
+    font-weight: 300;
+}
+.restaurant .restaurantcontent .restaurantcard .tagline
+{
+    position: absolute;
+    top: 15px;
+    left: 2px;
+    padding: 7px 10px;
+    background-color: #d70f64; 
+    border: none;
+    border: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+}
+footer
+{
+    width: 80%;
+    margin-top: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+footer .footercontent
+{
+    width: 90%;
+}
+
+footer .aboutFoodpanda h2
+{
+    font-size: 1.9em;
+    font-weight: 500;
+}
+footer .aboutFoodpanda p
+{
+    width: 99%;
+    font-size: 15px;
+    font-weight: 300;
+    color: #555;
+    margin-top: 15px;
+}
+footer .whatsnew
+{
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+footer .whatsnew h2
+{
+    font-size: 2.1em;
+    font-weight: 700;
+}
+footer .whatsnew p
+{
+    margin-top: 10px;
+    color: #555;
+}
+footer .whatsnew p span
+{
+    color: #d70f64;
+    font-weight: 400;
+    font-size: 1.1em;
+}
+footer .faq
+{
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+footer .faq h2
+{
+    font-size: 1.5em;
+    font-weight: 700;
+
+}
+footer .faq h3
+{
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #000;
+}
+footer .footerlogo 
+{
+    padding-bottom: 20px;
+}
+
+footer .footerlogo .imgBx
+{
+    width: 250px;
+    height: 50px;
+    /* border: 1px solid #000; */
+}
+footer .footerlogo .imgBx img
+{
+    width: 120%;
+    height: 110%;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+footer .copyright
+{
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+}
+footer .copyright h2
+{
+    font-size: 1.1em;
+    color: #666;
+    font-weight: 400;
+}
